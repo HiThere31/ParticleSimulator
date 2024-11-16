@@ -1,0 +1,16 @@
+\doxysection{src/\+Particle.cpp File Reference}
+\hypertarget{_particle_8cpp}{}\label{_particle_8cpp}\index{src/Particle.cpp@{src/Particle.cpp}}
+
+
+Implementación de la clase \doxylink{class_particle}{Particle}.  
+
+
+{\ttfamily \#include "{}Particle.\+h"{}}\newline
+Include dependency graph for Particle.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+Implementación de la clase \doxylink{class_particle}{Particle}. 
+
+Este archivo contiene la implementación de los métodos de la clase \doxylink{class_particle}{Particle}, incluyendo su constructor, la actualización de su estado y el método para dibujarla en la ventana. 

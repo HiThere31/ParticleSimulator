@@ -1,0 +1,223 @@
+\doxysection{Particle Class Reference}
+\hypertarget{class_particle}{}\label{class_particle}\index{Particle@{Particle}}
+
+
+Representa una partícula en el simulador.  
+
+
+
+
+{\ttfamily \#include $<$Particle.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_particle_abd145dc40d5a803d35bd463e3ce9e0e9}{Particle}} (float \mbox{\hyperlink{class_particle_ad4143dd85b447270cf6c5234cf1916b0}{x}}, float \mbox{\hyperlink{class_particle_a5abb12ba5f671bbace1c0121412fa5b8}{y}}, float \mbox{\hyperlink{class_particle_a3a9c8ec502deee9e17355867563e55dc}{radius}})
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{class_particle}{Particle}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_particle_a623b932ef68149271d9ae684c35c62e4}{update}} (float dt)
+\begin{DoxyCompactList}\small\item\em Actualiza el estado de la partícula. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_particle_a7f81b3af6985c5e96e77422dc80e732a}{draw}} (sf\+::\+Render\+Window \&window)
+\begin{DoxyCompactList}\small\item\em Dibuja la partícula en la ventana. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_particle_ad4143dd85b447270cf6c5234cf1916b0}{x}}
+\item 
+float \mbox{\hyperlink{class_particle_a5abb12ba5f671bbace1c0121412fa5b8}{y}}
+\begin{DoxyCompactList}\small\item\em Posición de la partícula. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_particle_ab5e3c721adb2f88275c15608b42e642f}{vx}}
+\item 
+float \mbox{\hyperlink{class_particle_ab6cf36c2b84f1b268f0467c35c6944b2}{vy}}
+\begin{DoxyCompactList}\small\item\em Velocidad de la partícula. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_particle_a5208b18af0d9323aae2781a9db74cbfe}{ax}}
+\item 
+float \mbox{\hyperlink{class_particle_a502893d3801ca202166e837d466312b1}{ay}}
+\begin{DoxyCompactList}\small\item\em Aceleración de la partícula. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_particle_a3a9c8ec502deee9e17355867563e55dc}{radius}}
+\begin{DoxyCompactList}\small\item\em Radio de la partícula. \end{DoxyCompactList}\item 
+sf\+::\+Color \mbox{\hyperlink{class_particle_ac4b0b63df626ccb45334c7df7a6ca446}{color}}
+\begin{DoxyCompactList}\small\item\em Color de la partícula. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa una partícula en el simulador. 
+
+La clase \doxylink{class_particle}{Particle} contiene información sobre la posición, velocidad, aceleración y el radio de una partícula. También incluye métodos para actualizar su estado y dibujarla en una ventana gráfica. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_particle_abd145dc40d5a803d35bd463e3ce9e0e9}\index{Particle@{Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{Particle()}{Particle()}}
+{\footnotesize\ttfamily \label{class_particle_abd145dc40d5a803d35bd463e3ce9e0e9} 
+Particle\+::\+Particle (\begin{DoxyParamCaption}\item[{float}]{x}{, }\item[{float}]{y}{, }\item[{float}]{radius}{}\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase \doxylink{class_particle}{Particle}. 
+
+Inicializa una partícula con una posición inicial y un radio.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Posición inicial en el eje X. \\
+\hline
+{\em y} & Posición inicial en el eje Y. \\
+\hline
+{\em radius} & Radio de la partícula.\\
+\hline
+\end{DoxyParams}
+Inicializa una partícula con su posición, velocidad inicial, aceleración, radio y color predeterminado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Posición inicial en el eje X. \\
+\hline
+{\em y} & Posición inicial en el eje Y. \\
+\hline
+{\em radius} & Radio de la partícula. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_particle_a7f81b3af6985c5e96e77422dc80e732a}\index{Particle@{Particle}!draw@{draw}}
+\index{draw@{draw}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_particle_a7f81b3af6985c5e96e77422dc80e732a} 
+void Particle\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window}{}\end{DoxyParamCaption})}
+
+
+
+Dibuja la partícula en la ventana. 
+
+Representa visualmente la partícula en la ventana especificada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Referencia a la ventana de SFML donde se dibujará la partícula.\\
+\hline
+\end{DoxyParams}
+Crea un círculo que representa la partícula y lo dibuja en la ventana especificada.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Referencia a la ventana de SFML donde se dibujará la partícula. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Círculo que representa la partícula
+
+\texorpdfstring{$<$}{<} Establece la posición del círculo
+
+\texorpdfstring{$<$}{<} Establece el color del círculo
+
+\texorpdfstring{$<$}{<} Dibuja el círculo en la ventanaHere is the caller graph for this function\+:
+% FIG 0
+\Hypertarget{class_particle_a623b932ef68149271d9ae684c35c62e4}\index{Particle@{Particle}!update@{update}}
+\index{update@{update}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_particle_a623b932ef68149271d9ae684c35c62e4} 
+void Particle\+::update (\begin{DoxyParamCaption}\item[{float}]{dt}{}\end{DoxyParamCaption})}
+
+
+
+Actualiza el estado de la partícula. 
+
+Calcula la nueva posición de la partícula basándose en su velocidad y aceleración.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Tiempo transcurrido desde la última actualización (en segundos).\\
+\hline
+\end{DoxyParams}
+Modifica la posición de la partícula basándose en su velocidad, aceleración y el tiempo transcurrido desde la última actualización.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & Tiempo transcurrido desde la última actualización (en segundos). \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Actualiza la velocidad en el eje X
+
+\texorpdfstring{$<$}{<} Actualiza la velocidad en el eje Y
+
+\texorpdfstring{$<$}{<} Actualiza la posición en el eje X
+
+\texorpdfstring{$<$}{<} Actualiza la posición en el eje YHere is the caller graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_particle_a5208b18af0d9323aae2781a9db74cbfe}\index{Particle@{Particle}!ax@{ax}}
+\index{ax@{ax}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{ax}{ax}}
+{\footnotesize\ttfamily \label{class_particle_a5208b18af0d9323aae2781a9db74cbfe} 
+float Particle\+::ax}
+
+\Hypertarget{class_particle_a502893d3801ca202166e837d466312b1}\index{Particle@{Particle}!ay@{ay}}
+\index{ay@{ay}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{ay}{ay}}
+{\footnotesize\ttfamily \label{class_particle_a502893d3801ca202166e837d466312b1} 
+float Particle\+::ay}
+
+
+
+Aceleración de la partícula. 
+
+\Hypertarget{class_particle_ac4b0b63df626ccb45334c7df7a6ca446}\index{Particle@{Particle}!color@{color}}
+\index{color@{color}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily \label{class_particle_ac4b0b63df626ccb45334c7df7a6ca446} 
+sf\+::\+Color Particle\+::color}
+
+
+
+Color de la partícula. 
+
+\Hypertarget{class_particle_a3a9c8ec502deee9e17355867563e55dc}\index{Particle@{Particle}!radius@{radius}}
+\index{radius@{radius}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily \label{class_particle_a3a9c8ec502deee9e17355867563e55dc} 
+float Particle\+::radius}
+
+
+
+Radio de la partícula. 
+
+\Hypertarget{class_particle_ab5e3c721adb2f88275c15608b42e642f}\index{Particle@{Particle}!vx@{vx}}
+\index{vx@{vx}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{vx}{vx}}
+{\footnotesize\ttfamily \label{class_particle_ab5e3c721adb2f88275c15608b42e642f} 
+float Particle\+::vx}
+
+\Hypertarget{class_particle_ab6cf36c2b84f1b268f0467c35c6944b2}\index{Particle@{Particle}!vy@{vy}}
+\index{vy@{vy}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{vy}{vy}}
+{\footnotesize\ttfamily \label{class_particle_ab6cf36c2b84f1b268f0467c35c6944b2} 
+float Particle\+::vy}
+
+
+
+Velocidad de la partícula. 
+
+\Hypertarget{class_particle_ad4143dd85b447270cf6c5234cf1916b0}\index{Particle@{Particle}!x@{x}}
+\index{x@{x}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{class_particle_ad4143dd85b447270cf6c5234cf1916b0} 
+float Particle\+::x}
+
+\Hypertarget{class_particle_a5abb12ba5f671bbace1c0121412fa5b8}\index{Particle@{Particle}!y@{y}}
+\index{y@{y}!Particle@{Particle}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{class_particle_a5abb12ba5f671bbace1c0121412fa5b8} 
+float Particle\+::y}
+
+
+
+Posición de la partícula. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_particle_8h}{Particle.\+h}}\item 
+src/\mbox{\hyperlink{_particle_8cpp}{Particle.\+cpp}}\end{DoxyCompactItemize}

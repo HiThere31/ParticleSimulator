@@ -20,7 +20,9 @@ find_package(SFML 2.5 COMPONENTS system window graphics REQUIRED)
 file(GLOB SOURCES src/*.cpp)
 
 # Crear el ejecutable
-add_executable(ParticleSimulator ${SOURCES})
+add_executable(ParticleSimulator ${SOURCES}
+        src/Particle.cpp
+)
 
 # Vincular las bibliotecas de SFML
 target_link_libraries(ParticleSimulator sfml-system sfml-window sfml-graphics)

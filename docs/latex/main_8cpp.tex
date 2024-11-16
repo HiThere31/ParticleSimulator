@@ -1,0 +1,60 @@
+\doxysection{src/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+
+
+Punto de entrada principal para el simulador de partículas.  
+
+
+{\ttfamily \#include $<$SFML/\+Graphics.\+hpp$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$Particle.\+h$>$}\newline
+Include dependency graph for main.\+cpp\+:
+% FIG 0
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Función principal del simulador de partículas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Punto de entrada principal para el simulador de partículas. 
+
+Este archivo contiene la función principal del programa. Se encarga de crear la ventana del simulador, manejar los eventos de usuario, y actualizar y renderizar las partículas. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Función principal del simulador de partículas. 
+
+Crea una ventana usando SFML, inicializa una partícula y ejecuta el bucle principal del simulador.
+
+\begin{DoxyReturn}{Returns}
+int Código de retorno del programa. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Ventana del simulador
+
+\texorpdfstring{$<$}{<} Partícula inicial
+
+\texorpdfstring{$<$}{<} Reloj para medir el tiempo entre actualizaciones
+
+Cierra la ventana si el usuario lo solicita.
+
+\texorpdfstring{$<$}{<} Tiempo transcurrido desde la última actualización
+
+\texorpdfstring{$<$}{<} Actualiza el estado de la partícula
+
+\texorpdfstring{$<$}{<} Limpia la ventana antes de dibujar
+
+\texorpdfstring{$<$}{<} Dibuja la partícula en la ventana
+
+\texorpdfstring{$<$}{<} Muestra los contenidos en pantalla
+
+\texorpdfstring{$<$}{<} Indica que el programa terminó correctamenteHere is the call graph for this function\+:
+% FIG 1
